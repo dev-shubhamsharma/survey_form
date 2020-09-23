@@ -1,0 +1,154 @@
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body
+{
+   font-family:'poppins',montserrat,sans-serif;
+}
+
+.background
+{
+   width: 100%;
+   height: 100vh;
+   background: url('https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+   background-position: center;
+   background-size: cover;
+   position: fixed;
+   top: 0;
+   left: 0;
+}
+
+.overlay
+{
+   width: 100%;
+   height: 100%;
+   background: #000;
+   opacity: 0.8;
+}
+
+main
+{
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+header
+{
+   width: 100vmin;
+   background: #009432;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 3vmin 0;
+   margin: 6vmin 0;
+   text-align: center;
+}
+
+#title
+{
+   margin-bottom: 2vmin;
+   font-size: 6vmin;
+   font-family:'roboto slab',serif;
+   color: #000;
+}
+
+#survey-form
+{
+   background: #fff;
+   width: 100vmin;
+   padding: 6vmin;
+   margin-bottom: 6vmin;
+}
+
+.wrapper
+{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin: 2.5vmin 0;
+}
+
+.label
+{
+   font-size: 3vmin;
+   margin: 1vmin 0;
+}
+
+.note
+{
+   font-size: 2.5vmin;
+}
+
+.input
+{
+   font-size: 3.5vmin;
+   width: 100%;
+   padding: 0.3vmin;
+   color: #222;
+}
+
+input[type="radio"],input[type="checkbox"]
+{
+   min-height: 3.2vmin;
+   min-width: 3.2vmin;
+   transform: translateY(0.7vmin);
+   margin-right: 2vmin;
+}
+
+#submit
+{
+   width: 100%;
+   font-size: 3vmin;
+   background: #009432;
+   border: none;
+   padding: 2vmin;
+   letter-spacing: 0.2vmin;
+   text-transform: uppercase;
+   margin-top: 3vmin;
+   cursor: pointer;
+}
+
+
+@media (max-width:650px)
+{
+   header
+   {
+      padding: 3vmin 4vmin;
+   }
+   
+   #survey-form
+   {
+      padding: 9vmin;
+   }
+   
+   .wrapper
+   {
+      margin: 4vmin 0;
+   }
+   
+   .label
+   {
+      font-size:3.5vmin;
+   }
+   
+   .note
+   {
+      font-size: 3vmin;
+   }
+   
+   .input
+   {
+      font-size: 4.2vmin;
+   }
+}
+
